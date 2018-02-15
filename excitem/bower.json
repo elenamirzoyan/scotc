@@ -1,0 +1,22 @@
+{
+  "name": "excitem",
+  "description": "Blogging demo",
+  "main": "index.js",
+  "authors": [
+    "Gevorg Aznauryan <gazilius@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://localhost",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "resolutions": {
+    "angular": "1.5.8"
+  }
+}

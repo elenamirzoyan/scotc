@@ -1,0 +1,30 @@
+<div id="page-wrapper">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down side-nav fixed collapsible">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="home.posts">Posts</a></li>
+                <li><a ui-sref="home.bloggers">Bloggers</a></li>
+            </ul>
+            <ul class="side-nav collapsible" id="mobile-demo">
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="home.posts">Posts</a></li>
+                <li><a ui-sref="home.bloggers">Bloggers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div ui-view="inner" id="main"></div>
+</div>
+<script>
+    $(".button-collapse").sideNav({
+        closeOnClick: true
+    });
+    $('.collapsible').collapsible({
+        accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+    $(document).ready(function(){
+        $(".dropdown-button").dropdown({ hover: false } );
+    });
+</script>

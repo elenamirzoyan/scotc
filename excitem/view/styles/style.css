@@ -1,0 +1,13 @@
+ul.side-nav.fixed{width:200px}
+#header, #main, #footer {
+    padding:20px;
+    padding-left: 220px;
+}
+@media only screen and (max-width: 992px) {
+    #header, #main, #footer {
+        padding:20px;
+    }
+}
+.side-nav .collapsible-header i {height:5px;color: #b39ddb;}
+.side-nav .collapsible-body i {height:5px;}
+.pointer{cursor: pointer}
